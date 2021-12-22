@@ -6,7 +6,7 @@ import useHttp from "./hooks/useHttp";
 
 function App() {
 	const [tasks, setTasks] = useState([]);
-	const apiUrl = "https://task-apps-backend-default-rtdb.firebaseio.com/tasks.json";
+	const apiUrl = 'https://task-apps-backend-default-rtdb.firebaseio.com/tasks.json';
 
 	const {isLoading, error, sendRequest: fetchTasks} = useHttp();
 
